@@ -31,13 +31,20 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
+
+    /**
+     * a method to set onclickListeners to the various buttons in the app
+     * @param btn
+     * @param projectName
+     */
     public void makeClickable(Button btn, final String projectName){
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast toast = Toast.makeText(getApplicationContext(),
                         "This Button will launch my " + projectName + " Project", Toast.LENGTH_LONG);
-
+                //This section of code was taken from http://www.mkyong.com/android/android-toast-example/
+                //its purpose is to center the text contained in the toast message
                 TextView v = (TextView) toast.getView().findViewById(android.R.id.message);
                 if( v != null) v.setGravity(Gravity.CENTER);
                 toast.show();
