@@ -26,12 +26,22 @@ public class MainActivity extends AppCompatActivity {
         final String[] projectName = {"Spotify Streamer", "Football Scores", "Library", "Build It",
                 "XYZ Reader", "Capstone"};
         Button[] btnArray = {spotifyBtn, scoresBtn,libraryBtn,buildItBtn,readerBtn,capstoneBtn};
-        for(int i=0;i<btnArray.length; i++) {
+       /* for(int i=0;i<btnArray.length; i++) {
             this.makeClickable(btnArray[i], projectName[i]);
 
-        }
+        }*/
     }
 
+    public void showToast(View view){
+        Button b = (Button)view;
+        Toast toast = Toast.makeText(getApplicationContext(),
+                "This Button will launch my " + b.getText().toString() + " Project", Toast.LENGTH_LONG);
+        //This section of code was taken from http://www.mkyong.com/android/android-toast-example/
+        //its purpose is to center the text contained in the toast message
+        TextView v = (TextView) toast.getView().findViewById(android.R.id.message);
+        if( v != null) v.setGravity(Gravity.CENTER);
+        toast.show();
+    }
     /**
      * a method to set onclickListeners to the various buttons in the app
      * @param btn

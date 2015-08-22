@@ -18,7 +18,8 @@
         android:layout_alignRight="@+id/build_it_button"
         android:layout_alignEnd="@+id/build_it_button"
         android:layout_alignLeft="@+id/build_it_button"
-        android:layout_alignStart="@+id/build_it_button"/>
+        android:layout_alignStart="@+id/build_it_button"
+        android:onClick="showToast"/>
 
     <Button
         style="@style/ButtonTheme"
@@ -28,7 +29,8 @@
         android:layout_alignRight="@+id/spotify_button"
         android:layout_alignEnd="@+id/spotify_button"
         android:layout_alignLeft="@+id/spotify_button"
-        android:layout_alignStart="@+id/spotify_button"/>
+        android:layout_alignStart="@+id/spotify_button"
+        android:onClick="showToast"/>
 
     <Button
         style="@style/ButtonTheme"
@@ -38,7 +40,8 @@
         android:layout_alignRight="@+id/scores_button"
         android:layout_alignEnd="@+id/scores_button"
         android:layout_alignLeft="@+id/scores_button"
-        android:layout_alignStart="@+id/scores_button"/>
+        android:layout_alignStart="@+id/scores_button"
+        android:onClick="showToast"/>
 
     <Button
         style="@style/ButtonTheme"
@@ -48,7 +51,8 @@
         android:layout_alignLeft="@+id/reader_button"
         android:layout_alignStart="@+id/reader_button"
         android:layout_alignRight="@+id/reader_button"
-        android:layout_alignEnd="@+id/reader_button" />
+        android:layout_alignEnd="@+id/reader_button"
+        android:onClick="showToast"/>
 
     <Button
         style="@style/ButtonTheme"
@@ -58,13 +62,15 @@
         android:layout_alignRight="@+id/capstone_button"
         android:layout_alignEnd="@+id/capstone_button"
         android:layout_alignLeft="@+id/capstone_button"
-        android:layout_alignStart="@+id/capstone_button" />
+        android:layout_alignStart="@+id/capstone_button"
+        android:onClick="showToast"/>
 
     <Button
         style="@style/ButtonTheme"
         android:text="Capstone: My Own App"
         android:id="@+id/capstone_button"
         android:layout_below="@+id/reader_button"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="showToast"/>
 
 </RelativeLayout>
